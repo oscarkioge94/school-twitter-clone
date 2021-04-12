@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Twitter Bootsrap v4 Clone</title>
+
+
+    <link rel='stylesheet prefetch'
+        href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.min.css'>
+    <!-- Custom css-->
+    <link rel="stylesheet" href="/css/index.css">
+
+
+</head>
+
+<body>
+    <!-- Fixed top navbar -->
+    <nav class="navbar navbar-toggleable-md fixed-top">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse container">
+            <!-- Navbar navigation links -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="octicon octicon-home" aria-hidden="true"></i> Home <span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="octicon octicon-zap"></i> Moments</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="octicon octicon-bell"></i> Notifications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="octicon octicon-inbox"></i> Messages</a>
+                </li>
+            </ul>
+            <!-- END: Navbar navigation links -->
+            <!-- Navbar Search form -->
+            <form class="navbar-form" role="search">
+                <div class="input-group">
+                    <input type="text" class="form-control input-search" placeholder="Search Twitter" name="srch-term"
+                        id="srch-term">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default btn-search" type="submit"><i
+                                class="octicon octicon-search navbar-search-icon"></i></button>
+                    </div>
+                </div>
+            </form>
+            <!-- END: Navbar Search form -->
+            <!-- Navbar User menu -->
+            <div class="dropdown navbar-user-dropdown">
+                <button class="btn btn-secondary dropdown-toggle btn-circle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" id="logout" href="#">LogOut</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+            <!-- END: Navbar User menu -->
+            <!-- Navbar Tweet button -->
+            <button id="tweetBtn" class="btn btn-search-bar">Tweet</button>
+        </div>
+        <div class="tweet">
+            <img class="cancel" src="../close.png" alt="">
+            <hr class="break">
+            <input class="subject" type="text" placeholder="Whats happening ?">
+            <button id="finalBtn" class="btn btn-search-bar">Tweet</button>
+
+
+        </div>
+    </nav>
+    <div class="body">
+        <div class="left">
+            <div class="container">
+                <img src="/home(1).png" alt="">
+                <p>Home</p>
+            </div>
+            <div class="container">
+                <img src="/hash.png" alt="">
+                <p>Explore</p>
+            </div>
+            <div class="container">
+                <img src="/comment.png" alt="">
+                <p>Message</p>
+            </div>
+            <div class="container">
+                <img src="/bookmark.png" alt="">
+                <p>Bookmark</p>
+            </div>
+            <div class="container">
+                <img src="/user.png" alt="">
+                <p>Profile</p>
+            </div>
+
+
+        </div>
+        <div class="middle">
+
+            <h1 class="title"></h1>
+
+
+
+
+
+        </div>
+        <div class="right">
+
+        </div>
+
+
+
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
+    <script src="/js/firebase.js"></script>
+    <script src='https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+    <script src="/js/index.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+.section {
+  height: 60vh;
+  width: 50%;
+  position: absolute;
+  top: 50px;
+  left: 260px;
+  display: flex;
+  flex-direction: column;
+}
+.section img {
+  height: 400px;
+  width: 400px;
+  margin-bottom: 20px;
+}
+.section input {
+  margin-bottom: 5px;
+  height: 30px;
+  border-radius: 30px;
+  outline: none;
+  align-items: center;
+  width: 400px;
+}
+.section a {
+  padding: 12px 30px;
+  color: white;
+  background-color: #ff214f;
+  max-width: 70px;
+  border-radius: 40px;
+  margin-left: 120px;
+  text-decoration: none;
+  font-family: sans-serif;
+  align-items: center;
+}
