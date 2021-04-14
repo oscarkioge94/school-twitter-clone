@@ -63,15 +63,15 @@ firebase.auth().onAuthStateChanged(function(user) {
 
                                 var theTweetDate = tweetDate.toDate().toDateString();
 
-                                content+= '<div class="middle">';
-                                content+= '<h1 class="title">' + theTweet +'</h1>';
-                              
+                                
+                                
 
 
 
                             });
-                            $("#themainCont").append(content);
+                            $(".middle").append(content);
 
+                           
                             
                         });
 
